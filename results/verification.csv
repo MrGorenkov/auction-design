@@ -1,0 +1,42 @@
+check,n,theory,estimate,ci95,diff,note
+revenue equivalence: second-price sealed,2,0.33333,0.33235,0.00073,-0.00098,
+revenue equivalence: first-price sealed,2,0.33333,0.33324,0.00037,-9e-05,
+revenue equivalence: English clock,2,0.33333,0.33235,0.00073,-0.00098,
+revenue equivalence: Dutch,2,0.33333,0.33324,0.00037,-9e-05,
+revenue equivalence: second-price sealed,3,0.5,0.50007,0.00069,7e-05,
+revenue equivalence: first-price sealed,3,0.5,0.49995,0.0004,-5e-05,
+revenue equivalence: English clock,3,0.5,0.50007,0.00069,7e-05,
+revenue equivalence: Dutch,3,0.5,0.49995,0.0004,-5e-05,
+revenue equivalence: second-price sealed,4,0.6,0.59981,0.00062,-0.00019,
+revenue equivalence: first-price sealed,4,0.6,0.59993,0.00038,-7e-05,
+revenue equivalence: English clock,4,0.6,0.59981,0.00062,-0.00019,
+revenue equivalence: Dutch,4,0.6,0.59993,0.00038,-7e-05,
+revenue equivalence: second-price sealed,6,0.71429,0.71447,0.00049,0.00019,
+revenue equivalence: first-price sealed,6,0.71429,0.71443,0.00032,0.00015,
+revenue equivalence: English clock,6,0.71429,0.71447,0.00049,0.00019,
+revenue equivalence: Dutch,6,0.71429,0.71443,0.00032,0.00015,
+revenue equivalence: second-price sealed,8,0.77778,0.77775,0.00041,-3e-05,
+revenue equivalence: first-price sealed,8,0.77778,0.77751,0.00027,-0.00027,
+revenue equivalence: English clock,8,0.77778,0.77775,0.00041,-3e-05,
+revenue equivalence: Dutch,8,0.77778,0.77751,0.00027,-0.00027,
+revenue equivalence: second-price sealed,10,0.81818,0.8183,0.00035,0.00011,
+revenue equivalence: first-price sealed,10,0.81818,0.81829,0.00023,0.00011,
+revenue equivalence: English clock,10,0.81818,0.8183,0.00035,0.00011,
+revenue equivalence: Dutch,10,0.81818,0.81829,0.00023,0.00011,
+second-price sealed with reserve,2,0.375,0.37505,0.00063,5e-05,reserve 0.25
+second-price sealed with reserve,2,0.41667,0.41674,0.0008,7e-05,reserve 0.5
+second-price sealed with reserve,4,0.60234,0.60214,0.00061,-0.0002,reserve 0.25
+second-price sealed with reserve,4,0.6125,0.61229,0.00065,-0.00021,reserve 0.5
+second-price sealed with reserve,6,0.71443,0.71471,0.00049,0.00029,reserve 0.25
+second-price sealed with reserve,6,0.71652,0.71677,0.00051,0.00025,reserve 0.5
+"simulator: proxies only (hard close, no cap)",2,0.33333,0.33271,0.00328,-0.00062,grid 0.01; efficiency 0.9998
+"simulator: proxies only (hard close, no cap)",4,0.6,0.59975,0.00278,-0.00025,grid 0.01; efficiency 1.0000
+"simulator: proxies only (hard close, no cap)",6,0.71429,0.71517,0.00221,0.00088,grid 0.01; efficiency 0.9999
+"simulator: proxies only (hard close, no cap)",8,0.77778,0.77786,0.00182,8e-05,grid 0.01; efficiency 0.9999
+"simulator: proxies only, starting price 0.5 = reserve",2,0.41667,0.4182,0.00356,0.00154,grid 0.01
+"simulator: proxies only, starting price 0.5 = reserve",4,0.6125,0.61328,0.00287,0.00078,grid 0.01
+"simulator: incremental bidders, reaction 0.01 min (English)",2,0.33333,0.33696,0.00661,0.00362,grid 0.01; efficiency 0.9995
+"simulator: incremental bidders, reaction 0.01 min (English)",4,0.6,0.60394,0.0055,0.00394,grid 0.01; efficiency 0.9999
+"simulator: incremental bidders, reaction 0.01 min (English)",6,0.71429,0.71406,0.00442,-0.00022,grid 0.01; efficiency 0.9999
+"simulator: proxies only, soft minus hard close (paired)",4,0.0,0.0,0.0,0.0,ci95 column = max absolute paired difference
+closed-form ladder vs literal ArtSphere loop (mismatches in 20000 random states),0,0,0,0,0,

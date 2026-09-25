@@ -1,0 +1,18 @@
+# raw data / model files are re-downloadable; LLM run caches are regenerated
+data/raw/
+models/
+*.gguf
+# manuscript text, journal documents and working notes are not published in the public code repository
+# (they are tracked in the private working repository with `git add -f`)
+paper/*
+!paper/figures/
+journal/
+00_requirements.md
+lit/notes.md
+__pycache__/
+*.pyc
+results/*.npy
+paper/build/node_modules/
+paper/build/package-lock.json
+paper/pages/
+STATUS.md

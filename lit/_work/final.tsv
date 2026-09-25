@@ -1,0 +1,50 @@
+roth2002last	10.1257/00028280260344632	core; sniping
+ockenfels2006late	10.1016/j.geb.2005.02.010	core; sniping
+ariely2005experimental	IDEAS:rje/randje/v36y20054p890-907	core; sniping; experiment
+ockenfels2013ending	10.1093/acprof:oso/9780199570515.003.0014	core; sniping; review
+bajari2003winner	10.2307/1593721	core; ebay
+bajari2004economic	10.1257/0022051041409075	core; ebay; review
+ockenfels2006online	10.1016/s1574-0145(06)01012-9	core; ebay; review
+lucking2000auctions	10.1111/1467-6451.00122	ebay
+hasker2010ebay	10.1007/s11151-010-9257-5	ebay; review
+milgrom2004putting	10.1017/CBO9780511813825	core; theory
+milgrom1982theory	10.2307/1911865	core; theory
+vickrey1961counterspeculation	10.1111/j.1540-6261.1961.tb02789.x	core; theory
+myerson1981optimal	10.1287/moor.6.1.58	core; theory
+klemperer1999auction	10.1111/1467-6419.00083	theory; review
+krishna2010auction	10.1016/C2009-0-22474-3	theory
+ely2009sniping	10.1257/mic.1.2.68	core; sniping
+wintr2008some	10.1111/j.1465-7295.2007.00097.x	sniping
+hossain2008learning	10.1111/j.0741-6261.2008.00025.x	sniping; incremental
+rasmusen2006strategic	10.2202/1534-5963.1261	incremental
+cotton2009multiple	10.1016/j.econlet.2009.05.002	incremental
+backus2015sniping	10.1145/2736277.2741690	core; sniping
+glover2012revenue	10.1016/j.jebo.2011.09.003	core; softclose
+houser2006hard	10.1007/0-387-24243-0_6	softclose; experiment
+cao2019sniping	10.1007/s11002-019-09487-7	softclose
+einav2018auctions	10.1086/695529	ebay
+peters2006internet	10.1016/j.jet.2005.04.005	theory; ebay
+zeithammer2010sealed	10.1287/mksc.1100.0561	ebay; incremental
+engelberg2009proxy	10.1016/j.jebo.2009.05.023	proxy
+bapna2003analysis	10.1287/mnsc.49.1.85.12754	design; is
+bapna2004user	10.2307/25148623	design; is
+shmueli2007barista	10.1214/07-AOAS117	timing
+kagel2016auctions	10.1515/9781400883172-010	experiment; review
+tesfatsion2002agent	10.1162/106454602753694765	abm
+farmer2009economy	10.1038/460685a	abm
+axtell2025agent	10.1257/jel.20221319	abm; review
+gode1993allocative	10.1086/261868	abm
+mizuta2000agent	10.1109/wsc.2000.899168	abm; sniping
+akopov2023modeling	10.17323/2587-814x.2023.2.7.19	abm; bi
+horton2023large	10.3386/w31122	llm
+aher2023using	arXiv:2208.10264	llm
+manning2024automated	10.3386/w32381	llm
+argyle2023out	10.1017/pan.2023.2	llm
+chen2023emergence	10.1073/pnas.2316205120	llm
+park2023generative	10.1145/3586183.3606763	llm
+banchio2022artificial	10.1145/3490486.3538244	llm; ai-auction
+chen2023put	arXiv:2310.05746	llm; llm-auction
+shah2025learning	arXiv:2507.09083	llm; llm-auction
+fish2024algorithmic	arXiv:2404.00806	llm
+raman2024steer	arXiv:2402.09552	llm
+yang2025qwen3	arXiv:2505.09388	llm; model

@@ -1,0 +1,106 @@
+{
+"roth2002last": {
+"abstract": null,
+"tldr": null
+},
+"ockenfels2006late": {
+"abstract": "In second price Internet auctions with a fixed end time, such as those on eBay, many bidders submit their bids in the closing minutes or seconds of an auction. We propose an internet auction model, in which very late bids have a positive probability of not being successfully submitted, and show that late bidding in a fixed deadline auction can occur at equilibrium in auctions both with private values and with uncertain, dependent values. Late bidding may also arise out of equilibrium, as a best reply to incremental bidding. However, the strategic advantages of late bidding are severely attenuated in auctions that apply an automatic extension rule such as auctions conducted on Amazon. Field data show that there is more late bidding on eBay than on Amazon, and this difference grows with experience. We also study the incidence of multiple bidding, and its relation to late bidding.",
+"tldr": "An internet auction model is proposed, in which very late bids have a positive probability of not being successfully submitted, and it is shown that late bidding in a fixed deadline auction can occur at equilibrium in auctions both with private values and with uncertain, dependent values."
+},
+"ockenfels2013ending": {
+"abstract": null,
+"tldr": null
+},
+"bajari2003winner": {
+"abstract": null,
+"tldr": null
+},
+"ockenfels2006online": {
+"abstract": null,
+"tldr": null
+},
+"hasker2010ebay": {
+"abstract": null,
+"tldr": null
+},
+"milgrom1982theory": {
+"abstract": null,
+"tldr": null
+},
+"vickrey1961counterspeculation": {
+"abstract": null,
+"tldr": null
+},
+"krishna2010auction": {
+"abstract": null,
+"tldr": null
+},
+"cotton2009multiple": {
+"abstract": null,
+"tldr": null
+},
+"backus2015sniping": {
+"abstract": null,
+"tldr": "The effect of sniping on a new buyer's propensity to participate in future auctions is measured to be causal using a carefully selected subset of auctions from eBay.com and instrumental variables estimation strategy."
+},
+"glover2012revenue": {
+"abstract": null,
+"tldr": null
+},
+"houser2006hard": {
+"abstract": null,
+"tldr": null
+},
+"cao2019sniping": {
+"abstract": null,
+"tldr": null
+},
+"einav2018auctions": {
+"abstract": null,
+"tldr": null
+},
+"peters2006internet": {
+"abstract": null,
+"tldr": "A perfect Bayesian equilibrium is characterized for this decentralized trading mechanism in which an efficient set of trades occurs at a uniform trading price when the number of buyers and sellers is large but finite."
+},
+"engelberg2009proxy": {
+"abstract": null,
+"tldr": null
+},
+"shmueli2007barista": {
+"abstract": "The arrival process of bidders and bids in online auctions is important for studying and modeling supply and demand in the online marketplace. A popular assumption in the online auction literature is that a Poisson bidder arrival process is a reasonable approximation. This approximation underlies theoretical derivations, statistical models and simulations used in field studies. However, when it comes to the bid arrivals, empirical research has shown that the process is far from Poisson, with early bidding and last-moment bids taking place. An additional feature that has been reported by various authors is an apparent self-similarity in the bid arrival process. Despite the wide evidence for the changing bidding intensities and the self-similarity, there has been no rigorous attempt at developing a model that adequately approximates bid arrivals and accounts for these features. The goal of this paper is to introduce a family of distributions that well-approximate the bid time distribution in hard-close auctions. We call this the BARISTA process (Bid ARrivals In STAges) because of its ability to generate different intensities at different stages. We describe the properties of this model, show how to simulate bid arrivals from it. and how to use it for estimation and inference. We illustrate its power and usefulness by fitting simulated and real data from eBay.com. Finally, we show how a Poisson bidder arrival process relates to a BARISTA bid arrival process.",
+"tldr": "A family of distributions that well-approximate the bid time distribution in hard-close auctions is introduced, called the BARISTA process (Bid ARrivals In STAges) because of its ability to generate different intensities at different stages."
+},
+"kagel2016auctions": {
+"abstract": null,
+"tldr": null
+},
+"farmer2009economy": {
+"abstract": "The leaders of the world are flying the economy by the seat of their pants, say J. Doyne Farmer and Duncan Foley. There is, however, a better way to help guide financial policies.",
+"tldr": "The leaders of the world are flying the economy by the seat of their pants, say J. Doyne Farmer and Duncan Foley, and there is a better way to help guide financial policies."
+},
+"gode1993allocative": {
+"abstract": null,
+"tldr": null
+},
+"mizuta2000agent": {
+"abstract": null,
+"tldr": null
+},
+"horton2023large": {
+"abstract": null,
+"tldr": null
+},
+"manning2024automated": {
+"abstract": null,
+"tldr": null
+},
+"park2023generative": {
+"abstract": "Believable proxies of human behavior can empower interactive applications ranging from immersive environments to rehearsal spaces for interpersonal communication to prototyping tools. In this paper, we introduce generative agents: computational software agents that simulate believable human behavior. Generative agents wake up, cook breakfast, and head to work; artists paint, while authors write; they form opinions, notice each other, and initiate conversations; they remember and reflect on days past as they plan the next day. To enable generative agents, we describe an architecture that extends a large language model to store a complete record of the agent’s experiences using natural language, synthesize those memories over time into higher-level reflections, and retrieve them dynamically to plan behavior. We instantiate generative agents to populate an interactive sandbox environment inspired by The Sims, where end users can interact with a small town of twenty-five agents using natural language. In an evaluation, these generative agents produce believable individual and emergent social behaviors. For example, starting with only a single user-specified notion that one agent wants to throw a Valentine’s Day party, the agents autonomously spread invitations to the party over the next two days, make new acquaintances, ask each other out on dates to the party, and coordinate to show up for the party together at the right time. We demonstrate through ablation that the components of our agent architecture—observation, planning, and reflection—each contribute critically to the believability of agent behavior. By fusing large language models with computational interactive agents, this work introduces architectural and interaction patterns for enabling believable simulations of human behavior.",
+"tldr": "This work describes an architecture that extends a large language model to store a complete record of the agent’s experiences using natural language, synthesize those memories over time into higher-level reflections, and retrieve them dynamically to plan behavior."
+},
+"banchio2022artificial": {
+"abstract": "Motivated by online advertising auctions, we study auction design in repeated auctions played by simple Artificial Intelligence algorithms (Q-learning). We find that first-price auctions with no additional feedback lead to tacit-collusive outcomes (bids lower than values), while second-price auctions do not. We show that the difference is driven by the incentive in first-price auctions to outbid opponents by just one bid increment. This facilitates re-coordination on low bids after a phase of experimentation. We also show that providing information about the lowest bid to win, as introduced by Google at the time of the switch to first-price auctions, increases competitiveness of auctions.",
+"tldr": "It is found that first- price auctions with no additional feedback lead to tacit-collusive outcomes (bids lower than values), while second-price auctions do not, and it is shown that the difference is driven by the incentive in first-price auction to outbid opponents by just one bid increment."
+}
+}

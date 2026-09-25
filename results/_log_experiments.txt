@@ -1,0 +1,58 @@
+ArtSphere: hard close, ladder cap 50 0.66963 0.97493 0.0 0.0
+hard close, no cap 0.67091 0.97577 0.00128 0.0
+soft close 1 min 0.67494 0.97831 0.00531 0.33433
+soft close 2 min 0.6773 0.97967 0.00767 0.76125
+soft close 5 min 0.68285 0.9829 0.01322 2.1663
+soft close 10 min 0.6887 0.98623 0.01908 4.88419
+soft close 30 min 0.69837 0.9914 0.02874 19.67268
+soft close 5 min, ladder cap 50 0.68169 0.98216 0.01206 2.17888
+q 0.0 [np.float64(0.6755), np.float64(0.6768), np.float64(0.688)]
+q 0.1 [np.float64(0.6704), np.float64(0.6716), np.float64(0.6835)]
+q 0.2 [np.float64(0.6648), np.float64(0.6661), np.float64(0.6781)]
+q 0.4 [np.float64(0.654), np.float64(0.6554), np.float64(0.666)]
+q 0.6 [np.float64(0.6424), np.float64(0.6438), np.float64(0.6528)]
+sniper_share 0.0 [np.float64(0.701), np.float64(0.7013), np.float64(0.7014)]
+sniper_share 0.1 [np.float64(0.6817), np.float64(0.6825), np.float64(0.6896)]
+sniper_share 0.2 [np.float64(0.6648), np.float64(0.6661), np.float64(0.6781)]
+sniper_share 0.4 [np.float64(0.636), np.float64(0.6395), np.float64(0.666)]
+sniper_share 0.6 [np.float64(0.6188), np.float64(0.6271), np.float64(0.6621)]
+react 1.0 [np.float64(0.6773), np.float64(0.6785), np.float64(0.6984)]
+react 5.0 [np.float64(0.6713), np.float64(0.6725), np.float64(0.688)]
+react 10.0 [np.float64(0.6648), np.float64(0.6661), np.float64(0.6781)]
+react 30.0 [np.float64(0.6428), np.float64(0.6442), np.float64(0.6527)]
+react 60.0 [np.float64(0.6262), np.float64(0.6279), np.float64(0.6368)]
+n 2 [np.float64(0.241), np.float64(0.2539), np.float64(0.2703)]
+n 3 [np.float64(0.4221), np.float64(0.4325), np.float64(0.4512)]
+n 4 [np.float64(0.533), np.float64(0.5379), np.float64(0.5552)]
+n 6 [np.float64(0.6648), np.float64(0.6661), np.float64(0.6781)]
+n 8 [np.float64(0.7441), np.float64(0.7444), np.float64(0.7527)]
+n 12 [np.float64(0.8268), np.float64(0.8269), np.float64(0.8321)]
+step 0.001 [np.float64(0.5317), np.float64(0.6198), np.float64(0.6457)]
+step 0.005 [np.float64(0.6397), np.float64(0.6533), np.float64(0.6684)]
+step 0.01 [np.float64(0.6648), np.float64(0.6661), np.float64(0.6781)]
+step 0.02 [np.float64(0.6726), np.float64(0.6726), np.float64(0.6821)]
+step 0.05 [np.float64(0.6771), np.float64(0.6771), np.float64(0.6848)]
+dist uniform [np.float64(0.6648), np.float64(0.6661), np.float64(0.6781)]
+dist lognormal [np.float64(0.6722), np.float64(0.674), np.float64(0.6864)]
+dist beta_low [np.float64(0.3401), np.float64(0.3402), np.float64(0.3465)]
+late_frac 0.0 [np.float64(0.6648), np.float64(0.6661), np.float64(0.6781)]
+late_frac 0.3 [np.float64(0.6404), np.float64(0.6417), np.float64(0.6606)]
+late_frac 0.6 [np.float64(0.62), np.float64(0.6216), np.float64(0.6488)]
+{'background': 'baseline mix', 'rule': 'ArtSphere: hard close, ladder cap 50', 'pay_proxy': 0.02659, 'pay_proxy_ci': 0.0011, 'win_proxy': 0.1794, 'revenue_proxy': 0.68419, 'pay_incr': 0.02226, 'pay_incr_ci': 0.00103, 'win_incr': 0.1442, 'revenue_incr': 0.66786, 'pay_sniper': 0.03958, 'pay_sniper_ci': 0.00147, 'win_sniper': 0.2011, 'revenue_sniper': 0.64933, 'd_sniper_minus_proxy': 0.01299, 'd_sniper_minus_proxy_ci': 0.0011, 'd_incr_minus_proxy': -0.00432, 'd_incr_minus_proxy_ci': 0.0006}
+{'background': 'baseline mix', 'rule': 'hard close, no cap', 'pay_proxy': 0.02637, 'pay_proxy_ci': 0.0011, 'win_proxy': 0.1781, 'revenue_proxy': 0.68539, 'pay_incr': 0.02226, 'pay_incr_ci': 0.00103, 'win_incr': 0.1442, 'revenue_incr': 0.66879, 'pay_sniper': 0.03963, 'pay_sniper_ci': 0.00147, 'win_sniper': 0.2028, 'revenue_sniper': 0.65165, 'd_sniper_minus_proxy': 0.01326, 'd_sniper_minus_proxy_ci': 0.00109, 'd_incr_minus_proxy': -0.00411, 'd_incr_minus_proxy_ci': 0.00059}
+{'background': 'baseline mix', 'rule': 'soft close 1 min', 'pay_proxy': 0.02623, 'pay_proxy_ci': 0.00109, 'win_proxy': 0.1771, 'revenue_proxy': 0.68769, 'pay_incr': 0.02269, 'pay_incr_ci': 0.00104, 'win_incr': 0.1467, 'revenue_incr': 0.67286, 'pay_sniper': 0.03714, 'pay_sniper_ci': 0.00141, 'win_sniper': 0.1973, 'revenue_sniper': 0.66085, 'd_sniper_minus_proxy': 0.01091, 'd_sniper_minus_proxy_ci': 0.00101, 'd_incr_minus_proxy': -0.00354, 'd_incr_minus_proxy_ci': 0.00057}
+{'background': 'baseline mix', 'rule': 'soft close 5 min', 'pay_proxy': 0.02622, 'pay_proxy_ci': 0.00109, 'win_proxy': 0.1771, 'revenue_proxy': 0.69204, 'pay_incr': 0.02449, 'pay_incr_ci': 0.00108, 'win_incr': 0.1582, 'revenue_incr': 0.68139, 'pay_sniper': 0.03102, 'pay_sniper_ci': 0.00127, 'win_sniper': 0.1768, 'revenue_sniper': 0.67305, 'd_sniper_minus_proxy': 0.00479, 'd_sniper_minus_proxy_ci': 0.00085, 'd_incr_minus_proxy': -0.00173, 'd_incr_minus_proxy_ci': 0.00051}
+{'background': 'baseline mix', 'rule': 'soft close 30 min', 'pay_proxy': 0.02608, 'pay_proxy_ci': 0.00109, 'win_proxy': 0.1766, 'revenue_proxy': 0.70147, 'pay_incr': 0.0263, 'pay_incr_ci': 0.0011, 'win_incr': 0.175, 'revenue_incr': 0.69918, 'pay_sniper': 0.02181, 'pay_sniper_ci': 0.00101, 'win_sniper': 0.1454, 'revenue_sniper': 0.69274, 'd_sniper_minus_proxy': -0.00427, 'd_sniper_minus_proxy_ci': 0.00053, 'd_incr_minus_proxy': 0.00022, 'd_incr_minus_proxy_ci': 0.00024}
+{'background': 'baseline mix', 'rule': 'hard close, no cap, q = 0', 'pay_proxy': 0.0243, 'pay_proxy_ci': 0.00104, 'win_proxy': 0.1698, 'revenue_proxy': 0.69394, 'pay_incr': 0.01963, 'pay_incr_ci': 0.00096, 'win_incr': 0.1323, 'revenue_incr': 0.67715, 'pay_sniper': 0.04431, 'pay_sniper_ci': 0.00151, 'win_sniper': 0.2371, 'revenue_sniper': 0.67171, 'd_sniper_minus_proxy': 0.02001, 'd_sniper_minus_proxy_ci': 0.00096, 'd_incr_minus_proxy': -0.00466, 'd_incr_minus_proxy_ci': 0.00058}
+{'background': 'incremental-heavy', 'rule': 'ArtSphere: hard close, ladder cap 50', 'pay_proxy': 0.02566, 'pay_proxy_ci': 0.00108, 'win_proxy': 0.1756, 'revenue_proxy': 0.67918, 'pay_incr': 0.02478, 'pay_incr_ci': 0.00109, 'win_incr': 0.1555, 'revenue_incr': 0.66223, 'pay_sniper': 0.05974, 'pay_sniper_ci': 0.00181, 'win_sniper': 0.2675, 'revenue_sniper': 0.61782, 'd_sniper_minus_proxy': 0.03407, 'd_sniper_minus_proxy_ci': 0.00144, 'd_incr_minus_proxy': -0.00088, 'd_incr_minus_proxy_ci': 0.00061}
+{'background': 'incremental-heavy', 'rule': 'hard close, no cap', 'pay_proxy': 0.02553, 'pay_proxy_ci': 0.00107, 'win_proxy': 0.1749, 'revenue_proxy': 0.6796, 'pay_incr': 0.02478, 'pay_incr_ci': 0.00109, 'win_incr': 0.1555, 'revenue_incr': 0.66241, 'pay_sniper': 0.0597, 'pay_sniper_ci': 0.00181, 'win_sniper': 0.2686, 'revenue_sniper': 0.61856, 'd_sniper_minus_proxy': 0.03417, 'd_sniper_minus_proxy_ci': 0.00144, 'd_incr_minus_proxy': -0.00075, 'd_incr_minus_proxy_ci': 0.00061}
+{'background': 'incremental-heavy', 'rule': 'soft close 1 min', 'pay_proxy': 0.02551, 'pay_proxy_ci': 0.00107, 'win_proxy': 0.1747, 'revenue_proxy': 0.68108, 'pay_incr': 0.02498, 'pay_incr_ci': 0.0011, 'win_incr': 0.1568, 'revenue_incr': 0.66492, 'pay_sniper': 0.05563, 'pay_sniper_ci': 0.00174, 'win_sniper': 0.2578, 'revenue_sniper': 0.62713, 'd_sniper_minus_proxy': 0.03012, 'd_sniper_minus_proxy_ci': 0.00137, 'd_incr_minus_proxy': -0.00054, 'd_incr_minus_proxy_ci': 0.00059}
+{'background': 'incremental-heavy', 'rule': 'soft close 5 min', 'pay_proxy': 0.02547, 'pay_proxy_ci': 0.00107, 'win_proxy': 0.1747, 'revenue_proxy': 0.68607, 'pay_incr': 0.02594, 'pay_incr_ci': 0.00111, 'win_incr': 0.1628, 'revenue_incr': 0.67271, 'pay_sniper': 0.04142, 'pay_sniper_ci': 0.0015, 'win_sniper': 0.2114, 'revenue_sniper': 0.64824, 'd_sniper_minus_proxy': 0.01595, 'd_sniper_minus_proxy_ci': 0.00112, 'd_incr_minus_proxy': 0.00047, 'd_incr_minus_proxy_ci': 0.00057}
+{'background': 'incremental-heavy', 'rule': 'soft close 30 min', 'pay_proxy': 0.02523, 'pay_proxy_ci': 0.00106, 'win_proxy': 0.1736, 'revenue_proxy': 0.70089, 'pay_incr': 0.02601, 'pay_incr_ci': 0.00109, 'win_incr': 0.1726, 'revenue_incr': 0.69719, 'pay_sniper': 0.02174, 'pay_sniper_ci': 0.001, 'win_sniper': 0.1446, 'revenue_sniper': 0.68856, 'd_sniper_minus_proxy': -0.00349, 'd_sniper_minus_proxy_ci': 0.00054, 'd_incr_minus_proxy': 0.00078, 'd_incr_minus_proxy_ci': 0.00033}
+{'background': 'incremental-heavy', 'rule': 'hard close, no cap, q = 0', 'pay_proxy': 0.02447, 'pay_proxy_ci': 0.00104, 'win_proxy': 0.1706, 'revenue_proxy': 0.68272, 'pay_incr': 0.02304, 'pay_incr_ci': 0.00105, 'win_incr': 0.1479, 'revenue_incr': 0.6653, 'pay_sniper': 0.06941, 'pay_sniper_ci': 0.00189, 'win_sniper': 0.3226, 'revenue_sniper': 0.63067, 'd_sniper_minus_proxy': 0.04494, 'd_sniper_minus_proxy_ci': 0.00139, 'd_incr_minus_proxy': -0.00143, 'd_incr_minus_proxy_ci': 0.0006}
+{'background': 'proxy-heavy', 'rule': 'ArtSphere: hard close, ladder cap 50', 'pay_proxy': 0.02539, 'pay_proxy_ci': 0.00107, 'win_proxy': 0.1741, 'revenue_proxy': 0.70515, 'pay_incr': 0.02321, 'pay_incr_ci': 0.00103, 'win_incr': 0.1575, 'revenue_incr': 0.69929, 'pay_sniper': 0.02408, 'pay_sniper_ci': 0.00109, 'win_sniper': 0.151, 'revenue_sniper': 0.6903, 'd_sniper_minus_proxy': -0.0013, 'd_sniper_minus_proxy_ci': 0.00066, 'd_incr_minus_proxy': -0.00218, 'd_incr_minus_proxy_ci': 0.00038}
+{'background': 'proxy-heavy', 'rule': 'hard close, no cap', 'pay_proxy': 0.02524, 'pay_proxy_ci': 0.00106, 'win_proxy': 0.1734, 'revenue_proxy': 0.70593, 'pay_incr': 0.02321, 'pay_incr_ci': 0.00103, 'win_incr': 0.1575, 'revenue_incr': 0.7001, 'pay_sniper': 0.02423, 'pay_sniper_ci': 0.00109, 'win_sniper': 0.1527, 'revenue_sniper': 0.69217, 'd_sniper_minus_proxy': -0.00101, 'd_sniper_minus_proxy_ci': 0.00065, 'd_incr_minus_proxy': -0.00203, 'd_incr_minus_proxy_ci': 0.00037}
+{'background': 'proxy-heavy', 'rule': 'soft close 1 min', 'pay_proxy': 0.02522, 'pay_proxy_ci': 0.00106, 'win_proxy': 0.1732, 'revenue_proxy': 0.70626, 'pay_incr': 0.0234, 'pay_incr_ci': 0.00103, 'win_incr': 0.1588, 'revenue_incr': 0.70101, 'pay_sniper': 0.02394, 'pay_sniper_ci': 0.00108, 'win_sniper': 0.1529, 'revenue_sniper': 0.69422, 'd_sniper_minus_proxy': -0.00127, 'd_sniper_minus_proxy_ci': 0.00064, 'd_incr_minus_proxy': -0.00182, 'd_incr_minus_proxy_ci': 0.00036}
+{'background': 'proxy-heavy', 'rule': 'soft close 5 min', 'pay_proxy': 0.02522, 'pay_proxy_ci': 0.00106, 'win_proxy': 0.1732, 'revenue_proxy': 0.70674, 'pay_incr': 0.02408, 'pay_incr_ci': 0.00105, 'win_incr': 0.1633, 'revenue_incr': 0.70286, 'pay_sniper': 0.02272, 'pay_sniper_ci': 0.00104, 'win_sniper': 0.1484, 'revenue_sniper': 0.69599, 'd_sniper_minus_proxy': -0.00249, 'd_sniper_minus_proxy_ci': 0.00058, 'd_incr_minus_proxy': -0.00114, 'd_incr_minus_proxy_ci': 0.0003}
+{'background': 'proxy-heavy', 'rule': 'soft close 30 min', 'pay_proxy': 0.02518, 'pay_proxy_ci': 0.00106, 'win_proxy': 0.1731, 'revenue_proxy': 0.70778, 'pay_incr': 0.02515, 'pay_incr_ci': 0.00106, 'win_incr': 0.1722, 'revenue_incr': 0.70699, 'pay_sniper': 0.02055, 'pay_sniper_ci': 0.00097, 'win_sniper': 0.1404, 'revenue_sniper': 0.69927, 'd_sniper_minus_proxy': -0.00464, 'd_sniper_minus_proxy_ci': 0.00049, 'd_incr_minus_proxy': -3e-05, 'd_incr_minus_proxy_ci': 0.00015}
+{'background': 'proxy-heavy', 'rule': 'hard close, no cap, q = 0', 'pay_proxy': 0.02416, 'pay_proxy_ci': 0.00103, 'win_proxy': 0.1691, 'revenue_proxy': 0.71062, 'pay_incr': 0.02169, 'pay_incr_ci': 0.00099, 'win_incr': 0.1505, 'revenue_incr': 0.70413, 'pay_sniper': 0.02876, 'pay_sniper_ci': 0.00116, 'win_sniper': 0.1858, 'revenue_sniper': 0.70586, 'd_sniper_minus_proxy': 0.0046, 'd_sniper_minus_proxy_ci': 0.00047, 'd_incr_minus_proxy': -0.00247, 'd_incr_minus_proxy_ci': 0.00039}
