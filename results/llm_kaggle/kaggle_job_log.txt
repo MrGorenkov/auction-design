@@ -1,0 +1,13 @@
+[      0s] $ git clone --depth 1 --branch b11136 https://github.com/ggml-org/llama.cpp /tmp/job/llama.cpp
+[      5s] $ cmake -S /tmp/job/llama.cpp -B /tmp/job/build -DGGML_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=75 -DCMAKE_BUILD_TYPE=Release -DLLAMA_CURL=OFF -DLLAMA_OPENSSL=OFF -DCUDA_cuda_driver_LIBRARY=/usr/local/nvidia/lib64/libcuda.so
+[     13s] $ cmake --build /tmp/job/build --config Release -j 4 --target llama-server
+[   1754s] $ wget -q -O /tmp/job/Qwen_Qwen3.5-4B-Q4_K_M.gguf https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/resolve/main/Qwen_Qwen3.5-4B-Q4_K_M.gguf
+[   1827s] qwen4b: 3.0 GB
+[   1994s] qwen4b finished, exit code 0
+[   1995s] $ wget -q -O /tmp/job/Qwen_Qwen3.5-9B-Q4_K_M.gguf https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF/resolve/main/Qwen_Qwen3.5-9B-Q4_K_M.gguf
+[   2150s] qwen9b: 6.2 GB
+[   2405s] qwen9b finished, exit code 0
+[   2406s] $ wget -q -O /tmp/job/Qwen_Qwen3.5-27B-Q4_K_M.gguf https://huggingface.co/bartowski/Qwen_Qwen3.5-27B-GGUF/resolve/main/Qwen_Qwen3.5-27B-Q4_K_M.gguf
+[   3353s] qwen27b: 18.0 GB
+[   4236s] qwen27b finished, exit code 0
+[   4238s] done

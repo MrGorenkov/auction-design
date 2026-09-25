@@ -1,6 +1,7 @@
 """Summarise LLM bidding plans and evaluate them in the simulator.
 
-Inputs: results/llm/decisions_<label>.jsonl (from llm_bidders.py, CPU pilot or Kaggle).
+Inputs: results/llm/decisions_<label>.jsonl (llm_bidders.py on CPU) and results/llm_kaggle/decisions_<label>.jsonl
+(the same script on Kaggle GPUs, 10 repeats). Pilot models come from the CPU set, the others from the GPU set.
 Outputs:
   results/llm_plans.csv   - share of valid answers, share choosing last-second timing, max_bid / value, by model x rule
   results/llm_payoffs.csv - expected surplus of the LLM plan as bidder 0 against the baseline mix of simulated rivals,
@@ -19,6 +20,7 @@ import population as P
 
 ROOT = Path(__file__).resolve().parents[1]
 LLM = ROOT / "results" / "llm"
+KAGGLE = ROOT / "results" / "llm_kaggle"
 RES = ROOT / "results"
 RULE = {"hard": A.Rules("ArtSphere: hard close, ladder cap 50", cap=50),
         "soft5": A.Rules("soft close 5 min", soft=5.0), "soft30": A.Rules("soft close 30 min", soft=30.0)}
@@ -28,12 +30,46 @@ PILOT = {"qwen0.8b", "qwen2b"}                      # CPU pilot models (labelled
 
 
 def load():
+    """Main set: CPU pilot answers for the models in PILOT (results/llm/) and the GPU (Kaggle) answers for the rest
+    (results/llm_kaggle/). CPU answers of the larger models are used only for the CPU-GPU agreement check."""
     recs = []
     for f in sorted(LLM.glob("decisions_*.jsonl")):
+        recs += [r for r in map(json.loads, f.read_text(encoding="utf-8").splitlines()) if r["model"] in PILOT]
+    gpu = sorted(KAGGLE.glob("decisions_*.jsonl"))
+    if not gpu:                                        # no Kaggle output: fall back to all CPU answers
+        recs = [json.loads(x) for f in sorted(LLM.glob("decisions_*.jsonl"))
+                for x in f.read_text(encoding="utf-8").splitlines() if x.strip()]
+    for f in gpu:
         recs += [json.loads(x) for x in f.read_text(encoding="utf-8").splitlines() if x.strip()]
     for r in recs:
         r["valid"] = r["timing"] in ("early", "late") and r["max_bid_ton"] is not None and r["max_bid_ton"] >= 0
     return recs
+
+
+def cpu_gpu_agreement():
+    """Same prompt and seed on CPU (results/llm/) and GPU (results/llm_kaggle/): share of identical plans."""
+    rows = []
+    for f in sorted(KAGGLE.glob("decisions_*.jsonl")):
+        cpu_f = LLM / f.name
+        if not cpu_f.exists():
+            continue
+        g = {r["id"]: r for r in map(json.loads, f.read_text(encoding="utf-8").splitlines())}
+        c = {r["id"]: r for r in map(json.loads, cpu_f.read_text(encoding="utf-8").splitlines())}
+        common = sorted(set(g) & set(c))
+        same_t = np.mean([g[k]["timing"] == c[k]["timing"] for k in common])
+        same_b = np.mean([g[k]["max_bid_ton"] == c[k]["max_bid_ton"] for k in common])
+        same = np.mean([g[k]["timing"] == c[k]["timing"] and g[k]["max_bid_ton"] == c[k]["max_bid_ton"] for k in common])
+        late_c = np.mean([c[k]["timing"] == "late" for k in common])
+        late_g = np.mean([g[k]["timing"] == "late" for k in common])
+        rows.append({"model": f.stem.replace("decisions_", ""), "pairs": len(common), "same_timing": round(float(same_t), 4),
+                     "same_max_bid": round(float(same_b), 4), "same_plan": round(float(same), 4),
+                     "late_share_cpu": round(float(late_c), 4), "late_share_gpu": round(float(late_g), 4)})
+    if rows:
+        with open(RES / "llm_cpu_gpu_agreement.csv", "w", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=list(rows[0]))
+            w.writeheader()
+            w.writerows(rows)
+    return rows
 
 
 def focal_job(args):
@@ -78,8 +114,10 @@ def market_job(args):
 
 
 def main():
+    print(cpu_gpu_agreement())
     recs = load()
-    models = sorted({r["model"] for r in recs})
+    order = ["qwen0.8b", "qwen2b", "qwen4b", "qwen9b", "qwen27b"]
+    models = sorted({r["model"] for r in recs}, key=lambda m: order.index(m) if m in order else 99)
     plan_rows, pay_rows, mkt_rows = [], [], []
     with Pool(4) as pool:
         for m in models:
@@ -132,7 +170,7 @@ def main():
             r["p_late_vs_hard"] = ""
             continue
         a_, b_ = round(r["late_share"] * r["valid"]), round(h["late_share"] * h["valid"])
-        r["p_late_vs_hard"] = round(float(fisher_exact([[a_, r["valid"] - a_], [b_, h["valid"] - b_]])[1]), 4)
+        r["p_late_vs_hard"] = float(f"{fisher_exact([[a_, r['valid'] - a_], [b_, h['valid'] - b_]])[1]:.3g}")
     for name, rows in (("llm_plans.csv", plan_rows), ("llm_payoffs.csv", pay_rows), ("llm_market.csv", mkt_rows)):
         if rows:
             with open(RES / name, "w", newline="") as f:
